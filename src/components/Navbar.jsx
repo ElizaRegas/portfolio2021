@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/HornLogoSilver.png";
 import "../sass/main.css";
 
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
       <section className="navbar">
         <div className="navbar__block">
           <div>
-            <h1 className="navbar__logo">E<sp></sp>R</h1>
+            <img src={logo} alt="site logo" className="hornLogo"></img>
           </div>
           <div>
             <ul className="navbar__items">
@@ -35,7 +36,7 @@ const Navbar = () => {
           </div>
         </div>
       </section>
-      <h1 className="navbar__squiggle">i</h1>
+      {/* <h1 className="navbar__squiggle">i</h1> */}
     </div>
   );
 };

@@ -10,8 +10,6 @@ const Home = () => {
       <div>
         <img src={Liz} alt="landing portrait" className="homeBgImg"></img>
         <div className="landingText">
-          {/* <h1 className="landingText__name">Elizabeth Regas.</h1>
-          <p className="landingText__description">UX / UI Developer .</p> */}
           <div class="container">
             <div class="box">
               <div class="title">

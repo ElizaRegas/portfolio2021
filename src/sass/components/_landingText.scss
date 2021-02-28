@@ -3,7 +3,7 @@
   position: relative;
   top: 5vw;
   left: 18vw;
-  
+
   // &__name {
   //   font-family: 'Ruthie';
   //   font-size: 7vw;
@@ -17,7 +17,7 @@
   // }
 
   .container {
-    width: 36%;
+    width: 36.3%;
     height: 100vh;
     background: #222;
     position: fixed;
@@ -26,31 +26,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, .5);
+
     .box {
       position: relative;
       display: flex;
       justify-content: center;
       flex-direction: column;
-  
+
       .title {
         width: 100%;
         position: relative;
         display: flex;
         align-items: center;
         height: 50px;
-  
+        text-shadow: 2px 2px 3px grey;
+
         .block {
           width: 0%;
           height: inherit;
           background: #931d1e;
           position: absolute;
-          animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
           display: flex;
         }
-  
+
         h1 {
-          font-family: 'Hello Lucky';
+          font-family: "Hello Lucky";
           color: #fff;
           font-size: 5.5vw;
           -webkit-animation: mainFadeIn 2s forwards;
@@ -61,28 +63,28 @@
           display: flex;
           align-items: baseline;
           position: relative;
-  
+
           span {
-            width:0px;
+            width: 0px;
             height: 0px;
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%;
-  
+
             background: #931d1e;
-            -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
-            animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+            -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92)
+              forwards;
+            animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
             animation-delay: 2s;
             margin-left: 5px;
             margin-top: -10px;
             position: relative;
             top: 0;
-            right: -.5vw;
-  
+            right: -0.5vw;
           }
         }
       }
-  
+
       .role {
         width: 100%;
         position: relative;
@@ -91,51 +93,41 @@
         align-items: center;
         height: 30px;
         margin-top: -10px;
-  
+
         .block {
           width: 0%;
           height: inherit;
           background: #931d1e;
           position: absolute;
-          animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+          animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
           animation-delay: 2s;
           display: flex;
         }
-  
+
         p {
           animation: secFadeIn 2s forwards;
           animation-delay: 3.2s;
           opacity: 0;
-           font-weight: 400;
-          font-family: 'Lato';
-          color: white;
+          font-weight: 400;
+          font-family: "Lato";
+          color: #dfdfdf;
           font-size: 1.4vw;
           text-transform: uppercase;
           letter-spacing: 5px;
-
-          ::selection {
-            color: red;
-          }
         }
       }
     }
   }
 }
 
-.landingText .container .box .role p::selection {
-  color: white;
-}
-
 @keyframes mainBlock {
   0% {
     width: 0%;
     left: 0;
-
   }
   50% {
     width: 100%;
     left: 0;
-
   }
   100% {
     width: 0;
@@ -147,12 +139,10 @@
   0% {
     width: 0%;
     left: 0;
-
   }
   50% {
     width: 100%;
     left: 0;
-
   }
   100% {
     width: 0;
@@ -169,7 +159,6 @@
   }
 }
 
-
 @keyframes popIn {
   0% {
     width: 0px;
@@ -185,24 +174,23 @@
     opacity: 1;
     bottom: 45px;
   }
-   65% {
-      width: 7px;
+  65% {
+    width: 7px;
     height: 7px;
-      bottom: 0px;
-      width: 15px
-   }
-   80% {
-      width: 10px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
     height: 10px;
-      bottom: 20px
-   }
+    bottom: 20px;
+  }
   100% {
     width: 7px;
     height: 7px;
     background: #931d1e;
     border: 0px solid #222;
     bottom: 13px;
-
   }
 }
 

@@ -151,6 +151,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #931d1e;
+  color: #dfdfdf;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -216,6 +217,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: 3;
 }
 
 .landingText {
@@ -226,7 +228,7 @@ body {
 }
 
 .landingText .container {
-  width: 36%;
+  width: 36.3%;
   height: 100vh;
   background: #222;
   position: fixed;
@@ -241,6 +243,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 10px 3px rgba(0, 0, 0, 0.5);
 }
 
 .landingText .container .box {
@@ -267,6 +271,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
+  text-shadow: 2px 2px 3px grey;
 }
 
 .landingText .container .box .title .block {
@@ -282,7 +287,7 @@ body {
 }
 
 .landingText .container .box .title h1 {
-  font-family: 'Hello Lucky';
+  font-family: "Hello Lucky";
   color: #fff;
   font-size: 5.5vw;
   -webkit-animation: mainFadeIn 2s forwards;
@@ -312,7 +317,7 @@ body {
   margin-top: -10px;
   position: relative;
   top: 0;
-  right: -.5vw;
+  right: -0.5vw;
 }
 
 .landingText .container .box .role {
@@ -350,27 +355,11 @@ body {
           animation-delay: 3.2s;
   opacity: 0;
   font-weight: 400;
-  font-family: 'Lato';
-  color: white;
+  font-family: "Lato";
+  color: #dfdfdf;
   font-size: 1.4vw;
   text-transform: uppercase;
   letter-spacing: 5px;
-}
-
-.landingText .container .box .role p ::-moz-selection {
-  color: red;
-}
-
-.landingText .container .box .role p ::selection {
-  color: red;
-}
-
-.landingText .container .box .role p::-moz-selection {
-  color: white;
-}
-
-.landingText .container .box .role p::selection {
-  color: white;
 }
 
 @-webkit-keyframes mainBlock {
@@ -540,11 +529,9 @@ body {
 }
 
 .navbar {
-  -webkit-box-shadow: 0 5px 2px -5px lightgray;
-          box-shadow: 0 5px 2px -5px lightgray;
+  -webkit-box-shadow: 0 2px 10px -2px lightgrey;
+          box-shadow: 0 2px 10px -2px lightgrey;
   height: 4vw;
-  z-index: 10;
-  position: relative;
   background-color: transparent;
 }
 
@@ -569,30 +556,45 @@ body {
 
 .navbar__items--link {
   text-decoration: none;
-  color: lightgray;
+  color: #dfdfdf;
   font-size: 1.2vw;
-  font-family: 'Lato';
+  font-family: "Lato";
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .navbar__items li {
   padding: 2.5% 0 2.5% 10%;
   z-index: 5;
+  text-shadow: 1px 1px 3px grey;
+}
+
+.navbar .hornLogo {
+  width: 6vw;
+  position: relative;
+  top: 1vw;
+  left: 3.5vw;
+  z-index: 3;
 }
 
 .navbar__logo {
-  font-family: 'Hello Lucky';
-  font-size: 3vw;
+  font-family: "Hello Lucky";
+  font-size: 2vw;
   width: 40%;
+  margin: 0 4vw;
+  position: relative;
   z-index: 10;
+  text-shadow: 2px 2px 4px grey;
 }
 
 .navbar__squiggle {
-  font-family: 'Hello Lucky Ornaments';
+  font-family: "Hello Lucky Ornaments";
   position: relative;
-  font-size: 5vw;
-  top: -3.5vw;
-  left: 7vw;
+  z-index: 3;
+  font-size: 3vw;
+  top: -3vw;
+  left: 12vw;
+  text-shadow: 2px 2px 4px grey;
 }
 
 .row {
